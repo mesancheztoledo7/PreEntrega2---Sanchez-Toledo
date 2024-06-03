@@ -1,37 +1,82 @@
-body {
-    background-color: lightblue;
+*
+{
+    padding: 0;
+    margin: 0;
 }
 
-.box {
-    background-color: darkcyan;
+body 
+{
+    background-color: white;
+}
+
+h1 
+
+{
+    color: aliceblue;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.c1,
+.c2,
+.c3,
+.c4,
+.c5,
+.c6,
+.c7 
+
+{
     width: 100%;
-    height: 100%;
+    height: 480px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
     border: 1px solid black;
     margin: 10px;
-    text-align: center;
 }
 
-.grid-layout {
-    background-color: whitesmoke;
+.c1 
+{
+    background-image: url("https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg");
+}
+
+.c2 
+{
+    background-image: url("https://images.pexels.com/photos/941861/pexels-photo-941861.jpeg");
+}
+
+.c3 
+{
+    background-image: url("https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg");
+}
+
+.c4 
+{
+    background-image: url("https://images.pexels.com/photos/1058277/pexels-photo-1058277.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+.c5 
+{
+    background-image: url("https://images.pexels.com/photos/1581554/pexels-photo-1581554.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+.c6 
+{
+    background-image: url("https://images.pexels.com/photos/2290753/pexels-photo-2290753.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+.c7 
+{
+    background-image: url("https://images.pexels.com/photos/791810/pexels-photo-791810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+.grid {
     width: 100%;
-    height: 100%;
+    background-color: rgb(228, 218, 202);
     margin: 0 auto;
-    padding: 10px;
     border: 2px solid black;
-    
+    justify-content: center;
     display: grid;
-    grid-template-columns: auto auto;
-    justify-content: space-around;
-}
-
-@media (max-width: 600px) {
-    .box {
-        width: calc(50% - 20px);
-        margin: 5px;
-    }
-
-    .grid-layout {
-        grid-template-columns: auto;
-        padding: 5px;
-    }
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto;
 }
